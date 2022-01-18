@@ -1,0 +1,60 @@
+PROGRAM:
+
+package arithmetic.calculator;
+
+import java.util.Scanner;
+
+	public class ArithmeticCalculator {
+		
+		public static void main(String []args){
+		       	    	
+		    Scanner  sc = new Scanner(System.in);
+	     	System.out.println("Enter the first number");
+		 		 double a = sc.nextDouble();
+	        System.out.println("Enter the second number");
+		 		 double b = sc.nextDouble();
+		 	System.out.print("\n1. Addition \n2. Subtraction \n3. Multiplication \n4. Division \n5. Exit Program");
+		 	
+		 	System.out.println("\nEnter your Choice (1/2/3/4/5)");
+		 	int n=sc.nextInt();
+		 	
+		    double ans;   
+		    
+		 	switch(n)
+			{
+				case 1: ans = a+b;
+						System.out.println("the result is: "+a +" + " + b +" = " +ans );
+						break;
+				case 2: ans = a-b;
+						System.out.println("the result is: "+a +" - " + b +" = " +ans );
+						break;
+				case 3: ans = a*b;
+						System.out.println("the result is: "+a +" * " + b +" = " +ans );
+						break;
+				case 4: ans = a/b;
+						System.out.println("the result is: "+a +" / " + b +" = " +ans );
+						break;
+				default: System.out.println("The data is invalid.");
+			}
+				 
+	     }
+	}
+
+
+OUTPUT:
+
+Enter the first number
+220
+Enter the second number
+240
+
+1. Addition 
+2. Subtraction 
+3. Multiplication 
+4. Division 
+5. Exit Program
+Enter your Choice (1/2/3/4/5)
+2
+The result is: 220.0 - 240.0 = -20.0
+
+
